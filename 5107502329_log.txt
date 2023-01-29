@@ -1,0 +1,4 @@
+u: football
+u: футбол
+u: футбол
+u: python

@@ -1,0 +1,102 @@
+{
+  'id': '23671759',
+  'premium': False,
+  'billing_type': {
+    'id': 'free',
+    'name': 'Бесплатная'
+  },
+  'relations': [],
+  'name': 'Программист базы данных (БД)',
+  'insider_interview': None,
+  'response_letter_required': False,
+  'area': {
+    'id': '107',
+    'name': 'Чебоксары',
+    'url': 'https://api.hh.ru/areas/107'
+  },
+  'salary': None,
+  'type': {
+    'id': 'open',
+    'name': 'Открытая'
+  },
+  'address': {
+    'city': 'Чебоксары',
+    'street': 'Нижегородская улица',
+    'building': '6',
+    'description': None,
+    'lat': 56.147611,
+    'lng': 47.23781,
+    'raw': 'Чебоксары, Нижегородская улица, 6',
+    'metro': None,
+    'metro_stations': []
+  },
+  'allow_messages': True,
+  'experience': {
+    'id': 'between3And6',
+    'name': 'От 3 до 6 лет'
+  },
+  'schedule': {
+    'id': 'fullDay',
+    'name': 'Полный день'
+  },
+  'employment': {
+    'id': 'full',
+    'name': 'Полная занятость'
+  },
+  'department': None,
+  'contacts': None,
+  'description': '<p>Программист БД (удаленная работа)</p> <p><strong>В крупную международную компанию требуется программист БД</strong></p> <p><strong>InStat</strong> – это мировой лидер в области футбольного анализа. Наши клиенты – это более 1300 клубов со всего мира, получающие статистический и видеоанализ. С нами работают спортивные директора, тренеры и футболисты ведущих клубов мира, в том числе Реала Мадрид, Челси, Спартак Москва и т.д.<br /><strong>InStat </strong>– быстрорастущая компания. Амбициозные планы компании – подписание всех профессиональных футбольных клубов мира, а также развитие анализа статистики в других видах спорта (хоккей, баскетбол и т.д.)</p> <p> </p> <p><strong>Требования:</strong></p> <ul> <li>знание PostgreSQL, MSSQL</li> <li>опыт работы с регулярными выражениями</li> <li>опыт написания хранимых процедур</li> <li>умение работать с планами запроса, оптимизировать запросы</li> <li>базовое знание PHP</li> <li>ответственность, пунктуальность</li> </ul> <p> </p> <p><strong>Условия:</strong></p> <ul> <li>8-часовой рабочий день, 5/2</li> <li>дружный, молодой, профессиональный, интернациональный коллектив</li> <li>работа в интересной сфере – футбол, хоккей, баскетбол</li> <li>широкие возможности для профессионального роста и развития</li> <li>уровень заработной платы обсуждается с успешным кандидатом на собеседовании</li> </ul> <p> </p> <p> </p> <p> </p>',
+  'branded_description': None,
+  'vacancy_constructor_template': None,
+  'key_skills': [],
+  'accept_handicapped': True,
+  'accept_kids': False,
+  'archived': True,
+  'response_url': None,
+  'specializations': [
+    {
+      'id': '1.221',
+      'name': 'Программирование, Разработка',
+      'profarea_id': '1',
+      'profarea_name': 'Информационные технологии, интернет, телеком'
+    }
+  ],
+  'professional_roles': [
+    {
+      'id': '96',
+      'name': 'Программист, разработчик'
+    }
+  ],
+  'code': None,
+  'hidden': False,
+  'quick_responses_allowed': False,
+  'driver_license_types': [],
+  'accept_incomplete_resumes': True,
+  'employer': {
+    'id': '779048',
+    'name': 'InStat',
+    'url': 'https://api.hh.ru/employers/779048',
+    'alternate_url': 'https://hh.ru/employer/779048',
+    'logo_urls': {
+      'original': 'https://hhcdn.ru/employer-logo-original/583691.png',
+      '240': 'https://hhcdn.ru/employer-logo/2776020.png',
+      '90': 'https://hhcdn.ru/employer-logo/2776019.png'
+    },
+    'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=779048',
+    'trusted': True
+  },
+  'published_at': '2017-11-30T16:55:26+0300',
+  'created_at': '2017-11-30T16:55:26+0300',
+  'initial_created_at': '2017-11-30T16:55:26+0300',
+  'negotiations_url': None,
+  'suitable_resumes_url': None,
+  'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=23671759',
+  'has_test': False,
+  'test': None,
+  'alternate_url': 'https://hh.ru/vacancy/23671759',
+  'working_days': [],
+  'working_time_intervals': [],
+  'working_time_modes': [],
+  'accept_temporary': False,
+  'languages': []
+}

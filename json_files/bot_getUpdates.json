@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "update_id": 429931820,
+      "message": {
+        "message_id": 473,
+        "from": {
+          "id": 5107502329,
+          "is_bot": false,
+          "first_name": "Nikita",
+          "username": "ShaoYoung",
+          "language_code": "ru"
+        },
+        "chat": {
+          "id": 5107502329,
+          "first_name": "Nikita",
+          "username": "ShaoYoung",
+          "type": "private"
+        },
+        "date": 1674974736,
+        "text": "/start",
+        "entities": [
+          {
+            "offset": 0,
+            "length": 6,
+            "type": "bot_command"
+          }
+        ]
+      }
+    }
+  ]
+}

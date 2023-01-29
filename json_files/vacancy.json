@@ -1,0 +1,153 @@
+{
+  "id": "72226070",
+  "premium": false,
+  "billing_type": {
+    "id": "standard",
+    "name": "Стандарт"
+  },
+  "relations": [],
+  "name": "DevOps-инженер",
+  "insider_interview": null,
+  "response_letter_required": false,
+  "area": {
+    "id": "90",
+    "name": "Томск",
+    "url": "https://api.hh.ru/areas/90"
+  },
+  "salary": {
+    "from": 120000,
+    "to": 160000,
+    "currency": "RUR",
+    "gross": false
+  },
+  "type": {
+    "id": "open",
+    "name": "Открытая"
+  },
+  "address": {
+    "city": "Томск",
+    "street": "проспект Фрунзе",
+    "building": "130а",
+    "description": null,
+    "lat": 56.476344,
+    "lng": 84.98881,
+    "raw": "Томск, проспект Фрунзе, 130а",
+    "metro": null,
+    "metro_stations": []
+  },
+  "allow_messages": true,
+  "experience": {
+    "id": "between1And3",
+    "name": "От 1 года до 3 лет"
+  },
+  "schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+  },
+  "employment": {
+    "id": "full",
+    "name": "Полная занятость"
+  },
+  "department": null,
+  "contacts": null,
+  "description": "<strong>Обязанности:</strong> <ul> <li>поддержка и развитие инфраструктуры;</li> <li>автоматизация действий в рамках процесса создания программного обеспечения;</li> <li>помощь в решении проблем, связанных с процессами разработки и тестирования ПО;</li> <li>настройка CI под требования проектов;</li> <li>ведение справочной документации.</li> </ul> <strong>Требования:</strong> <ul> <li>Высшее техническое образование.</li> <li>Знание одного или более скриптовых языков (python, bash, powershell, groovy).</li> <li>Опыт работы с CI/CD Jenkins.</li> <li>Опыт администрирования сервисов Confluence, Jira, Gitlab.</li> <li>Опыт использования систем управления конфигурациями Ansible.</li> <li>Опыт работы с Docker и Docker-Compose.</li> <li>Опыт работы с системами контроля версий (в частности - Git).</li> <li>Опыт работы в системном администрировании/devops от 1 года. Опыт администрирования Linux, Windows.</li> <li>Опыт поиска и устранения неисправностей (troubleshooting).</li> </ul> <p>Желательно:</p> <ul> <li>Опыт работы с системами CI/CD Gitlab-CI.</li> <li>Опыт администрирования СУБД (psql, ms-sql).</li> <li>Опыт настройки коммутации/маршрутизации.</li> <li>Опыт работы с ESXI.</li> <li>Опыт работы с системами мониторинга Prometheus/Grafana.</li> <li>Знание английского языка (на уровне intermediate - письменный).</li> <li>Опыт развёртывания окружения для автотестов в различных проектах (C#, Java).</li> <li>Опыт администрирования систем хранения артефактов (Artifactory, Nexus).</li> </ul> <strong>Условия:</strong> <ul> <li>Работа в аккредитованной ИТ компании.</li> <li>Современный комфортный офис.</li> <li>Работа в команде разработки ПО (разработчики, тестировщики, аналитики).</li> <li>Возможность обучения, профессионального развития на основе ИПР, участия в проектах департамента разработки.</li> <li>Оформление по ТК РФ.</li> <li>График работы - понедельник-пятница, с 09.00 до 18.00. Возможно гибкое начало рабочего дня. Возможен гибридный график работы после испытательного срока.</li> <li>Скидки в SkyEng, Super Gym на Комсомольском проспекте.</li> <li>Доступ к обширной базе знаний и библиотеке компании.</li> <li>Заработная плата состоит из оклада и ежемесячной премии по итогам выполнения КПЭ. Уровень заработной платы определяется по итогам собеседований, зависит от соответствия требованиям вакансии.</li> <li>Дополнительные выплаты к отпуску, начиная с третьего года работы.</li> <li>Прозрачная система карьерного роста на основе матрицы компетенций, результатов работы, выполнения ИПР (возможность ежегодной аттестации).</li> </ul>",
+  "branded_description": null,
+  "vacancy_constructor_template": null,
+  "key_skills": [
+    {
+      "name": "Git"
+    },
+    {
+      "name": "Jenkins"
+    },
+    {
+      "name": "Linux"
+    },
+    {
+      "name": "SQL"
+    },
+    {
+      "name": "Atlassian Confluence"
+    },
+    {
+      "name": "DevOps"
+    }
+  ],
+  "accept_handicapped": false,
+  "accept_kids": false,
+  "archived": false,
+  "response_url": null,
+  "specializations": [
+    {
+      "id": "1.270",
+      "name": "Сетевые технологии",
+      "profarea_id": "1",
+      "profarea_name": "Информационные технологии, интернет, телеком"
+    },
+    {
+      "id": "1.273",
+      "name": "Системный администратор",
+      "profarea_id": "1",
+      "profarea_name": "Информационные технологии, интернет, телеком"
+    },
+    {
+      "id": "1.82",
+      "name": "Инженер",
+      "profarea_id": "1",
+      "profarea_name": "Информационные технологии, интернет, телеком"
+    },
+    {
+      "id": "1.89",
+      "name": "Интернет",
+      "profarea_id": "1",
+      "profarea_name": "Информационные технологии, интернет, телеком"
+    }
+  ],
+  "professional_roles": [
+    {
+      "id": "160",
+      "name": "DevOps-инженер"
+    }
+  ],
+  "code": null,
+  "hidden": false,
+  "quick_responses_allowed": false,
+  "driver_license_types": [],
+  "accept_incomplete_resumes": false,
+  "employer": {
+    "id": "67843",
+    "name": "Элком +",
+    "url": "https://api.hh.ru/employers/67843",
+    "alternate_url": "https://hh.ru/employer/67843",
+    "logo_urls": {
+      "original": "https://hhcdn.ru/employer-logo-original/216665.gif",
+      "90": "https://hhcdn.ru/employer-logo/643193.png",
+      "240": "https://hhcdn.ru/employer-logo/643194.png"
+    },
+    "vacancies_url": "https://api.hh.ru/vacancies?employer_id=67843",
+    "trusted": true
+  },
+  "published_at": "2023-01-23T17:05:10+0300",
+  "created_at": "2023-01-23T17:05:10+0300",
+  "initial_created_at": "2022-11-11T14:41:53+0300",
+  "negotiations_url": null,
+  "suitable_resumes_url": null,
+  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=72226070",
+  "has_test": false,
+  "test": null,
+  "alternate_url": "https://hh.ru/vacancy/72226070",
+  "working_days": [],
+  "working_time_intervals": [],
+  "working_time_modes": [],
+  "accept_temporary": false,
+  "languages": [
+    {
+      "id": "eng",
+      "name": "Английский",
+      "level": {
+        "id": "b1",
+        "name": "B1 — Средний"
+      }
+    }
+  ]
+}

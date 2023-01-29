@@ -1,0 +1,127 @@
+{
+  "id": "72226080",
+  "premium": false,
+  "billing_type": {
+    "id": "standard",
+    "name": "Стандарт"
+  },
+  "relations": [],
+  "name": "Шлифовщик заточник",
+  "insider_interview": null,
+  "response_letter_required": false,
+  "area": {
+    "id": "301",
+    "name": "Обнинск",
+    "url": "https://api.hh.ru/areas/301"
+  },
+  "salary": {
+    "from": 80000,
+    "to": null,
+    "currency": "RUR",
+    "gross": true
+  },
+  "type": {
+    "id": "open",
+    "name": "Открытая"
+  },
+  "address": {
+    "city": "Обнинск",
+    "street": "Пионерский проезд",
+    "building": null,
+    "description": null,
+    "lat": 55.094452,
+    "lng": 36.591966,
+    "raw": "Обнинск, Пионерский проезд",
+    "metro": null,
+    "metro_stations": []
+  },
+  "allow_messages": true,
+  "experience": {
+    "id": "between1And3",
+    "name": "От 1 года до 3 лет"
+  },
+  "schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+  },
+  "employment": {
+    "id": "full",
+    "name": "Полная занятость"
+  },
+  "department": null,
+  "contacts": null,
+  "description": "<p>В связи с расширением, производственному предприятию на постоянную работу требуется шлифовщик заточник.</p> <p><strong>Обязанности:</strong></p> <ul> <li>Работа на универсальном заточном станке 3Е642</li> <li>Выполнение плана производства</li> </ul> <strong>Требования:</strong> <ul> <li>Опыт работы на аналогичной должности</li> <li>Профильное образование</li> </ul> <strong>Условия:</strong> <ul> <li>Работа в развивающейся компании</li> <li>Оформление по ТК РФ</li> </ul>",
+  "branded_description": null,
+  "vacancy_constructor_template": null,
+  "key_skills": [],
+  "accept_handicapped": false,
+  "accept_kids": false,
+  "archived": true,
+  "response_url": null,
+  "specializations": [
+    {
+      "id": "17.256",
+      "name": "Розничная торговля",
+      "profarea_id": "17",
+      "profarea_name": "Продажи"
+    },
+    {
+      "id": "17.242",
+      "name": "Прямые продажи",
+      "profarea_id": "17",
+      "profarea_name": "Продажи"
+    },
+    {
+      "id": "17.149",
+      "name": "Менеджер по работе с клиентами",
+      "profarea_id": "17",
+      "profarea_name": "Продажи"
+    },
+    {
+      "id": "17.183",
+      "name": "Начальный уровень, Мало опыта",
+      "profarea_id": "17",
+      "profarea_name": "Продажи"
+    },
+    {
+      "id": "15.389",
+      "name": "Продажи",
+      "profarea_id": "15",
+      "profarea_name": "Начало карьеры, студенты"
+    }
+  ],
+  "professional_roles": [
+    {
+      "id": "40",
+      "name": "Другое"
+    }
+  ],
+  "code": null,
+  "hidden": false,
+  "quick_responses_allowed": false,
+  "driver_license_types": [],
+  "accept_incomplete_resumes": true,
+  "employer": {
+    "id": "2145420",
+    "name": "Производственное предприятие КОНСТАР",
+    "url": "https://api.hh.ru/employers/2145420",
+    "alternate_url": "https://hh.ru/employer/2145420",
+    "logo_urls": null,
+    "vacancies_url": "https://api.hh.ru/vacancies?employer_id=2145420",
+    "trusted": true
+  },
+  "published_at": "2022-11-11T14:42:14+0300",
+  "created_at": "2022-11-11T14:42:14+0300",
+  "initial_created_at": "2022-11-11T14:42:14+0300",
+  "negotiations_url": null,
+  "suitable_resumes_url": null,
+  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=72226080",
+  "has_test": false,
+  "test": null,
+  "alternate_url": "https://hh.ru/vacancy/72226080",
+  "working_days": [],
+  "working_time_intervals": [],
+  "working_time_modes": [],
+  "accept_temporary": false,
+  "languages": []
+}

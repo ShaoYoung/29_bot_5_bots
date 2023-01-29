@@ -1,0 +1,64 @@
+{
+  'update_id': 429932022,
+  'callback_query': {
+    'id': '3489811396463826633',
+    'from': {
+      'id': 5107502329,
+      'is_bot': False,
+      'first_name': 'Nikita',
+      'username': 'ShaoYoung',
+      'language_code': 'ru'
+    },
+    'message': {
+      'message_id': 761,
+      'from': {
+        'id': 5128607764,
+        'is_bot': True,
+        'first_name': 'PythonBot_First_ToDo',
+        'username': 'PythonBot_First_ToDo_Bot'
+      },
+      'chat': {
+        'id': 5107502329,
+        'first_name': 'Nikita',
+        'username': 'ShaoYoung',
+        'type': 'private'
+      },
+      'date': 1675016530,
+      'text': 'Кнопка "Сайт"',
+      'reply_markup': {
+        'inline_keyboard': [
+          [
+            {
+              'text': 'Команда____________________1',
+              'callback_data': 'Команда_1'
+            },
+            {
+              'text': 'Сайт____________________2',
+              'url': 'https://www.soccer.ru/'
+            },
+            {
+              'text': 'Сайт____________________3',
+              'url': 'https://www.mail.ru/'
+            }
+          ],
+          [
+            {
+              'text': 'Команда____________________1',
+              'callback_data': 'Команда_1'
+            },
+            {
+              'text': 'Сайт____________________2',
+              'url': 'https://www.soccer.ru/'
+            },
+            {
+              'text': 'Сайт____________________3',
+              'url': 'https://www.mail.ru/'
+            }
+          ]
+        ]
+      }
+    },
+    'chat_instance': '-1315966592253747676',
+    'data': 'Команда_1'
+  }
+}
