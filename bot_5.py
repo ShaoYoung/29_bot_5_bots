@@ -60,12 +60,6 @@ def bot_start(TOKEN):
         # print(reply_markup)
         data = {'chat_id': chat_id, 'text': text, 'reply_markup': json.dumps(reply_markup)}
         requests.post(f'{URL}{TOKEN}/sendMessage', data=data)
-        # time.sleep(1)
-        # editMessageReplyMarkup = {}
-        # data = {'chat_id': chat_id, 'text': 'Убрал клаву', 'editMessageReplyMarkup': editMessageReplyMarkup}
-
-        #         bot.edit_message_reply_markup(message.message.chat.id, message.message.message_id)
-        # requests.post(f'{URL}{TOKEN}/sendMessage', data=data)
 
     # ReplyKeyboardMarkup - Этот объект представляет собой настраиваемую клавиатуру с параметрами ответа
     def reply_keyboard(chat_id, text):
@@ -104,20 +98,16 @@ def bot_start(TOKEN):
                     requests.get(f'{URL}{TOKEN}/answerCallbackQuery', data=data)
                     time.sleep(1)
 
-                    # chat_id = message['callback_query']['message']['chat']['id']
-                    # print(chat_id)
-                    # message_id = message['callback_query']['message']['message_id']
-                    # print(message_id)
-
+                    # скрыть клавиатуру после нажатия
                     data = {'chat_id': message['callback_query']['message']['chat']['id'],
                             'message_id': message['callback_query']['message']['message_id']}
 
-                    response = requests.post(f'{URL}{TOKEN}/editMessageReplyMarkup', data=data)
-                    InlineKeyboardButton_1 = {'text': 'Сайт_1', 'url': 'https://www.soccer.ru'}
+                    requests.post(f'{URL}{TOKEN}/editMessageReplyMarkup', data=data)
+
+                    InlineKeyboardButton_1 = {'text': 'Сайт_1', 'callback_data': 'Команда_2'}
                     InlineKeyboardButton_2 = {'text': 'Сайт_2', 'url': 'https://www.mail.ru'}
                     reply_markup = {'inline_keyboard': [[InlineKeyboardButton_1, InlineKeyboardButton_2]]}
                     # print(reply_markup)
                     data = {'chat_id': message['callback_query']['message']['chat']['id'], 'text': callback_query_data, 'reply_markup': json.dumps(reply_markup)}
                     requests.post(f'{URL}{TOKEN}/sendMessage', data=data)
-                    # print(response)
-                    # print(f"ID пользователя: {message['message']['chat']['id']}, Сообщение: {message['message']['text']}")
+

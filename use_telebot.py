@@ -12,6 +12,7 @@ import bot_2
 import bot_3
 import bot_4
 import bot_5
+import bot_6
 
 def get_TOKEN():
     # Хранение TOKEN в отдельном файле .env. Он добавляется в исключения .gitignore и не выгружается на GitHub
@@ -143,4 +144,5 @@ if __name__ == '__main__':
     # bot_3.bot_start(TOKEN)
     # bot_3.bot_start(TOKEN)
     # bot_4.bot_start(TOKEN)
-    bot_5.bot_start(TOKEN)
+    # bot_5.bot_start(TOKEN)
+    bot_6.bot_start(TOKEN)
