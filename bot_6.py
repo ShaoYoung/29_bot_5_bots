@@ -9,7 +9,6 @@ import json
 
 
 def bot_start(TOKEN):
-
     def gen_inline_markup():
         markup = telebot.types.InlineKeyboardMarkup()
         markup.row_width = 3
@@ -19,41 +18,63 @@ def bot_start(TOKEN):
         markup.add(button_3, button_4, button_5)
         return markup
 
-    def gen_reply_markup():
-        markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=4)
-        btn1 = telebot.types.KeyboardButton('Сообщения')
-        btn2 = telebot.types.KeyboardButton('Отчёты')
-        btn3 = telebot.types.KeyboardButton('Управление')
-        btn4 = telebot.types.KeyboardButton('Помощь')
-        markup.add(btn1, btn2, btn3, btn4)
+    def gen_reply_markup(num_of_buttons):
+        if num_of_buttons == 1:
+            markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
+            btn1 = telebot.types.KeyboardButton('Старт')
+            markup.add(btn1)
+        elif num_of_buttons == 4:
+            markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=4)
+            btn1 = telebot.types.KeyboardButton('Сообщения')
+            btn2 = telebot.types.KeyboardButton('Отчёты')
+            btn3 = telebot.types.KeyboardButton('Управление')
+            btn4 = telebot.types.KeyboardButton('Помощь')
+            markup.add(btn1, btn2, btn3, btn4)
         return markup
 
-    bot = telebot.TeleBot(TOKEN)
-    offset = 0
-    messages = bot.get_updates(offset)
-    offset = messages[-1].update_id
-    print(f'Offset {offset}')
-    bot.send_message(messages[-1].message.chat.id, 'Видно||Не видно||', parse_mode='MarkdownV2', reply_markup=gen_reply_markup())
-
-    timeout = 0
     while True:
-        time.sleep(2)
+        bot = telebot.TeleBot(TOKEN)
+        offset = 0
+        timeout = 2
         messages = bot.get_updates(offset=offset, timeout=timeout)
-        print(len(messages))
-        print(messages[-1].update_id)
-        if offset < messages[-1].update_id:
-            offset = messages[-1].update_id  # Присваиваем ID последнего отправленного сообщения боту
+        # off = messages[-1].update_id
+        if len(messages):
+            offset = messages[-1].update_id + 1
+            # messages = bot.get_updates(offset=offset)
 
-            for message in messages:
-                print(len(messages))
-                print(message.update_id)
-                bot.send_message(message.message.chat.id, f'{message.message.chat.id}')
+            # print(f'Новых сообщений: {len(messages)}')
+            print(f'Offset {offset}')
+            # bot.send_message(messages[-1].message.chat.id, 'Видно||Не видно||', parse_mode='MarkdownV2', reply_markup=gen_reply_markup(1))
+            bot.send_message(messages[-1].message.chat.id, 'Начало работы', reply_markup=gen_reply_markup(1))
 
-                # print(message.message.chat.id)
+            # Авторизация пройдена
+            start_msg = ['старт', 'start']
+            help_msg = ['помощь', 'help']
 
+            while True:
+                # time.sleep(2)
+                messages = bot.get_updates(offset=offset, timeout=timeout)
+                if len(messages):
+                    # if offset == message.update_id:
+                    offset = messages[-1].update_id + 1  # Присваиваем ID последнего отправленного сообщения боту
 
+                    print(len(messages))
+                    print(f'Offset: {offset}')
+                    print(messages[-1].update_id)
 
-
+                    for message in messages:
+                        if message.callback_query:
+                            # обработка нажатия кнопки
+                            print(f'Нажата inline кнопка {message.callback_query.data}')
+                        else:
+                            print(message.message.text.lower())
+                            if message.message.text.lower() in start_msg:
+                                print(message.update_id)
+                                bot.send_message(message.message.chat.id, 'Выберите действие',
+                                                 reply_markup=gen_reply_markup(4))
+                            elif message.message.text.lower() in help_msg:
+                                bot.send_message(message.message.chat.id, message.message.text,
+                                                 reply_markup=gen_inline_markup())
 
     def get_updates(offset=0):
         pass
@@ -73,8 +94,6 @@ def bot_start(TOKEN):
         else:
             reply_keyboard(chat_id, 'Моя твоя не понимает!')
 
-
-
     # =====================
     # Встроенная клавиатура
     # =====================
@@ -91,8 +110,6 @@ def bot_start(TOKEN):
         data = {'chat_id': chat_id, 'text': text, 'reply_markup': json.dumps(reply_markup)}
         # requests.post(f'{URL}{TOKEN}/sendMessage', data=data)
 
-
-
     # ReplyKeyboardMarkup - Этот объект представляет собой настраиваемую клавиатуру с параметрами ответа
     def reply_keyboard(chat_id, text):
         # Этот объект представляет собой настраиваемую клавиатуру с вариантами ответа (подробности и примеры см. в разделе Введение в ботов).
@@ -100,7 +117,6 @@ def bot_start(TOKEN):
                         "one_time_keyboard": True}
         data = {'chat_id': chat_id, 'text': text, 'reply_markup': json.dumps(reply_markup)}
         # requests.post(f'{URL}{TOKEN}/sendMessage', data=data)
-
 
     # URL = 'https://api.telegram.org/bot'
     #
@@ -142,4 +158,3 @@ def bot_start(TOKEN):
     #                 # print(reply_markup)
     #                 data = {'chat_id': message['callback_query']['message']['chat']['id'], 'text': callback_query_data, 'reply_markup': json.dumps(reply_markup)}
     #                 # requests.post(f'{URL}{TOKEN}/sendMessage', data=data)
-
